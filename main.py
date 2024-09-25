@@ -18,40 +18,40 @@ rc('font',**{'family':'Helvetica Light', 'size': 12}) # Just for a nice font
 
 # %%
 #  PARAMETERS
+# Feel free to add the values of your insurance there:
+# - names (string)
+# - deductibles (numpy array)
+# - premiums (numpy array, corresponding order with deductibles)
 
-# Co-payment parameters
-co_payment_rate = 0.1   # Co-payment rate
-co_payment_max = 700        # Maximum co-payment
-
-# # Unknown insurance
-# name = 'Unknown insurance'
-# premiums = np.array((390.65,379.65,352.05,324.55,297.05,269.45))
-# deductibles = np.array((300,500,1000,1500,2000,2500))
 
 # # Swisscare HMIE
 # name = 'Swisscare HMIE'
-# premiums = np.array((115,88,70,59,49,38))
 # deductibles = np.array((300,500,1000,1500,2000,2500))
-
-# # Swisscare SPSS
-# name = 'Swisscare SPSS'
-# premiums = np.array([124, 96, 70, 63])
-# deductibles = np.array([300, 500, 1000, 1500])
+# premiums = np.array((115,88,70,59,49,38))
 
 # Visana
 name = 'Visana'
-name = "XXXXXX"
-premiums = np.array((473.65,462.75,435.45,408.25,380.95,353.75))
 deductibles = np.array((300,500,1000,1500,2000,2500))
+premiums = np.array((473.65,462.75,435.45,408.25,380.95,353.75))
+
+# COMPLETE YOUR INSURANCE PREMIUMS HERE
+# name = "..."
+# deductibles = np.array((300,500,1000,1500,2000,2500))
+# premiums = np.array((...))
 
 
 
+
+# Co-payment parameters (shouldn't change)
+co_payment_rate = 0.1   # Co-payment rate
+co_payment_max = 700        # Maximum co-payment
+
+# SIMULATION
 max_cost = 10000 # Maximum cost to display
 n_points = 1000
 costs = np.linspace(0, max_cost, n_points)
 expenses = np.zeros((len(premiums),len(costs)))
 
-# SIMULATION
 # When the cost is higher than the deductible, the expense only increases
 # by 10% of the cost until 700 CHF is reached with these 10%.
 # After this, the expense doesn't increase anymore.
