@@ -111,7 +111,7 @@ plt.ylim(0)
 plt.legend()
 plt.grid()
 
-plt.savefig('health_cost_EN_'+name+'.png') # Saving the figure
+plt.savefig('out/health_cost_EN_'+name+'.png') # Saving the figure
 
 # %% 
 # German version
@@ -140,5 +140,5 @@ plt.ylim(0)
 plt.legend()
 plt.grid()
 
-plt.savefig('health_cost_DE_'+name+'.png') # Saving the figure
+plt.savefig('out/health_cost_DE_'+name+'.png') # Saving the figure
 plt.show()

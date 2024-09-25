@@ -1,6 +1,8 @@
 # Swiss Health Insurance Premium Comparator
 _A comparator of different Swiss health insurance premium plans._
 
+![Example of a comparison](example.png)
+
 This project simulates and compares health insurance premium plans in Switzerland based on different deductible amounts. The tool plots actual health expenses vs. health costs to help users visualize and understand which insurance plan offers the best value for them.
 
 ## Features
