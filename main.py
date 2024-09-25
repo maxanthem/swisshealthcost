@@ -112,7 +112,6 @@ plt.legend()
 plt.grid()
 
 plt.savefig('health_cost_EN_'+name+'.png') # Saving the figure
-plt.show()
 
 # %% 
 # German version
