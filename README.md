@@ -50,19 +50,18 @@ The program simulates costs for various insurance plans, with customizable param
 
 ## Installation
 
-Clone the repository and install the required dependencies.
+Clone the repository and install the required dependencies (Numpy and Matplotlib).
 
 ```bash
 git clone https://github.com/yourusername/swisshealthcost.git
 cd swisshealthcost
-pip install -r requirements.txt
 ```
 
 ## Usage
 
 Run the Python script to generate the comparison plots.
 ```bash
-python health_insurance_simulation.py
+python main.py
 ```
 
 ## Customization
